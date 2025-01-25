@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        
+        <style>
+            body{
+                background-color: aquamarine;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+     <p>Please enter your age fo registration</p>
+     <input id="demo" type="number" min="18" max="30">
+
+     <button onclick="myFunction()">Click me</button>
+     <p>To register you have to be between 18-30 years of age </p>
+     <p id="result"></p>
+
+        <script>
+            function myFunction() {
+                var inpObj=document.getElementById("demo");
+                if(!inpObj. checkValidity()) {
+                    document.getElementById("result").innerHTML=inpObj.validationMessage;
+                }
+                else{
+                    document.getElementById("result").innerHTML="You can register";
+                } 
+            }
+        </script>
+    </body>
+</html>
